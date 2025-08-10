@@ -39,7 +39,7 @@ export default function HomePage() {
     }
 
     // Fetch usernames for all user_ids
-    const userIds = (postsData || []).map((post: any) => post.user_id)
+    const userIds = (postsData || []).map((post: Post) => post.user_id)
     const { data: profilesData, error: profilesError } = await supabase
       .from('profiles')
       .select('id, username')
@@ -49,9 +49,17 @@ export default function HomePage() {
       console.error('Error fetching profiles:', profilesError)
     }
 
+    // Define Profile interface
+    interface Profile {
+      id: string
+      username: string | null
+    }
+
     // Map posts with usernames
-    const profilesMap = new Map(profilesData?.map((p: any) => [p.id, p.username]) || [])
-    const mapped = (postsData || []).map((post: any) => ({
+    const profilesMap = new Map(
+      (profilesData as Profile[] | undefined)?.map((p) => [p.id, p.username]) || []
+    )
+    const mapped = (postsData || []).map((post: Post) => ({
       ...post,
       profiles: { username: profilesMap.get(post.user_id) || null },
     }))
