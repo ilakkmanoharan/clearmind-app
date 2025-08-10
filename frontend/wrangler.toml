@@ -1,0 +1,4 @@
+name = "clearmind-app"
+compatibility_date = "2025-08-09"          # use a recent date
+compatibility_flags = ["nodejs_compat"]    # enable Node polyfills if required
+pages_build_output_dir = ".vercel/output/static"

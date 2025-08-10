@@ -1,0 +1,143 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: system-ui, sans-serif;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.postCard {
+  display: block;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
+}
+
+.postCard:hover {
+  background: #f9f9f9;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Increased space between username and date */
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 16px; /* Increased font size for more prominence */
+  padding-right: 20px; /* Added padding to give more space for username */
+}
+
+.date {
+  font-size: 12px;
+  color: #666;
+}
+
+.postContent {
+  margin-top: 4px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.preview {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/*
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: system-ui, sans-serif;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.postCard {
+  display: block;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
+}
+
+.postCard:hover {
+  background: #f9f9f9;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.username {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.date {
+  font-size: 12px;
+  color: #666;
+}
+
+.postContent {
+  margin-top: 4px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.preview {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+*/
